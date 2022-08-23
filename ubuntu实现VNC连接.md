@@ -15,7 +15,7 @@ deb http://archive.ubuntu.com/ubuntu/ bionic universe
 sudo apt-get update  #更新软件源
 ```
 
-## 安装vnc4server
+## 安装VNC4Server
 
 ```
 apt-get install vnc4server
@@ -40,7 +40,7 @@ apt-get install -y x-window-system-core
 ```
 vi ~/.vnc/xstartup
 
-注释掉四行
+注释掉四行  #网上众说纷纭，搞不清楚，反正注释不注释的没什么明显区别
 xsetroot
 ~
 x-windows
@@ -54,7 +54,7 @@ nautilus &
 gnome-terminal &
 ```
 
-## 重启
+## 重启以应用
 
 ```
 关闭已启动的vnc
@@ -63,7 +63,7 @@ vncserver -kill :1
 vncserver :1     #端口号为1
 ```
 
-## VNC登录
+## VNC客户端登录
 
 ```
 VNC Servere : ip + port
